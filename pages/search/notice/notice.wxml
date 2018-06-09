@@ -1,0 +1,17 @@
+<!--pages/search/notice/notice.wxml-->
+<view>
+  <view class='bar'>
+    <view class='title'>个人通知</view>
+    <button class='editBut' bindtap='editBut'>{{text}}</button>
+  </view>
+  <view>
+    <input class='inputItem' placeholder='通知内容' type='text' bindinput='content'/>
+    <button class='inputButton' bindtap='search'>查询</button>
+  </view>
+  <view wx:for='{{notice}}' class='content'>
+    <image src='/image/delete.png' class='editImg' hidden='{{isShow}}' bindtap='deleteNotice' data-text='{{item.id}}'/>
+    <view class='item'>{{item.content}}</view>
+    <view class='time'>{{item.time}}</view>
+  </view>
+  <button class='add' hidden='{{isShow}}' bindtap='add'>增加通知</button>
+</view>

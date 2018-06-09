@@ -1,0 +1,8 @@
+<!--pages/serve/article/add/index.wxml-->
+<view>
+  <view>
+    <input class='inputItem' placeholder='启事内容' type='text' bindinput='content'/>
+    <input class='inputItem' placeholder='地点' type='text' bindinput='place'/>
+  </view>
+  <button class='inputButton' bindtap='add'>确认提交</button>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/search/announcement/add/index.wxml-->
+<view>
+  <view>
+    <input class='inputItem' placeholder='公告内容' type='text' bindinput='content'/>
+    <input class='inputItem' placeholder='撰写人' type='text' bindinput='writer'/>
+  </view>
+  <button class='inputButton' bindtap='add'>确认提交</button>
+</view>

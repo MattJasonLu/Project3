@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+  <view>
+    <text>🔍</text>
+    <input></input>
+  </view>
+  <view class='button-group'>
+    <button bindtap='announcement'>教务公告</button>
+    <button bindtap='notice'>个人通知</button>
+    <button bindtap='course'>个人课表</button>
+    <button bindtap='score'>个人成绩</button>
+  </view>
+  <view class='title'>
+    <view>校内新闻</view>
+  </view>
+  <scroll-view class='news-body' scroll-y='true'>
+    <navigator url='' wx:for='{{news}}'>
+      <view class='item'>
+        <image class='poster' src='{{item.imageUrl}}'></image>
+        <view>{{item.content}}</view>
+      </view>
+    </navigator>
+  </scroll-view>
+
+</view>

@@ -1,0 +1,16 @@
+<!--pages/search/score/score.wxml-->
+<view class='bar'>
+    <view class='title'>个人成绩</view>
+    <button class='editBut' bindtap='editBut'>{{text}}</button>
+</view>
+<view>
+  <input class='inputItem' placeholder='关键字' type='text' bindinput='keyword'/>
+  <button class='inputButton' bindtap='search'>查询</button>
+</view>
+<button class='add' hidden='{{isShow}}' bindtap='add'>增加成绩</button>
+<button class='add' hidden='{{isShow}}' bindtap='update'>修改成绩</button>
+<button class='add' hidden='{{isShow}}' bindtap='delete'>删除成绩</button>
+<view wx:for='{{score}}' class='score' hidden='{{!isShow}}'>
+  <view class='score-name'>{{item.name}}</view>
+  <view class='score-score'>{{item.score}}</view>
+</view>

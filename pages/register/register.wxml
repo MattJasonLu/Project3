@@ -1,0 +1,18 @@
+<!--pages/register/register.wxml-->
+<view>
+    <text class='loginSolgon'>欢迎注册</text>
+    <text>滨江学院，欢迎你！</text>
+    <input class='inputItem' placeholder='昵称' type='text' bindinput='usernameInput'>{{username}}</input>
+    <input class='inputItem' placeholder='密码' type='text' password='true' bindinput='passwordInput' value='{{password}}'/>
+    <input class='inputItem' placeholder='重复密码' type='text' password='true' bindinput='cfmPasswordInput' value='{{cfmPassword}}'/>
+    <view class='mobileItems'>
+      <input class='mobilePrefix' placeholder='手机号码' type='text' bindinput='mobileInput' value='+86'/>    
+      <input class='mobile' placeholder='手机号码' type='text' bindinput='mobileInput' value='{{mobile}}'/>
+    </view>
+    <text class='tip'>可通过该手机号找回密码</text>
+    <checkbox class='tip' checked>我已阅读并同意相关服务条款和隐私政策</checkbox>
+    <button class='registerBut' bindtap='register'>立即注册</button>
+    <view  class='tip2'>
+      <text class='tip2'>Copyright © 2018 MattJason All Rights Reserved</text>
+    </view>
+</view>

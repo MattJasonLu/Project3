@@ -1,0 +1,14 @@
+<!--pages/search/course/delete/index.wxml-->
+<view>
+  <view>
+    <input class='inputItem' placeholder='课程名' type='text' bindinput='name'/>
+  </view>
+  <button class='inputButton' bindtap='select'>查询</button>
+  <view wx:for='{{notice}}' class='content'>
+    <image src='/image/delete.png' class='editImg' bindtap='delete' data-text='{{item.id}}'/>
+    <view class='item'>{{item.name}}</view>
+    <view class='item'>{{item.teacher}}</view>
+    <view class='item'>{{item.date}}</view>
+    <view class='time'>{{item.time}}</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+.inputItem {
+  margin: 20px;
+  border: solid 1px black;
+}
+.switchItems {
+  margin: 10px;
+  padding: 30px;
+}
+
+.inputButton {
+  margin: 20px
+}
+
+.jumpItem {
+  color: darkblue;
+  margin: 20px 45px;
+}

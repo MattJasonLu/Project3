@@ -1,0 +1,9 @@
+/* pages/serve/article/add/index.wxss */
+.inputItem {
+  margin: 20px;
+  border: solid 1px black;
+}
+
+.inputButton {
+  margin: 20px
+}

@@ -1,0 +1,21 @@
+<!--pages/serve/calendar/calendar.wxml-->
+<view>
+  <view class='bar'>
+    <text class='title'>教学日历</text>
+    <button class='editBut' bindtap='editBut'>{{text}}</button>
+  </view>
+  <view wx:for='{{calendar}}' class='content'>
+    <view class='left'>
+      <image src='/image/delete.png' class='editImg' hidden='{{isShow}}' bindtap='delete'/>
+    </view>
+    <view class='right'>
+      <view class='item'>{{item.name}}</view>
+      <view class='item'>{{item.type}}</view>
+      <view class='item'>{{item.property}}</view>
+      <view class='item'>{{item.score}}</view>
+      <view class='item'>{{item.college}}</view>
+    </view>
+  </view>
+
+  <button class='add' hidden='{{isShow}}' bindtap='add'>增加日历</button>
+</view>

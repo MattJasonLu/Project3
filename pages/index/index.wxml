@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+</view>
+<view class="warp">
+  <view class="item">个人信息</view>
+  <view class="item" bindtap='adjustPwd'>修改密码</view>
+  <view class="item last">设置</view>
+  </view>
+  <view class="warp">
+    <view class="item">收藏夹</view>
+    <view class="item last">浏览历史</view>
+  </view>

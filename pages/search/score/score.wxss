@@ -1,0 +1,38 @@
+/* pages/search/score/score.wxss */
+.score{
+  display: flex;
+  margin: 30rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.score .score-name{
+  width: 90%;
+  margin-left: 50rpx;
+}
+.score .score-score{
+  width: 10%;
+  margin-right: 50rpx;
+}
+.title{
+  font-size: 2rem;
+  margin: 30rpx;
+}
+.bar {
+  display: flex;
+}
+.editBut {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 80px;
+  height: 40px;
+}
+.add {
+  margin: 20px;
+}
+.inputItem {
+  margin: 20px;
+  border: solid 1px black;
+}
+
+.inputButton {
+  margin: 20px
+}

@@ -1,0 +1,9 @@
+<!--pages/adjustPwd/index.wxml-->
+<view>
+  <view>
+    <input class='inputItem' placeholder='旧密码' type='text' bindinput='oldPwdInput'/>
+    <input class='inputItem' placeholder='新密码' type='text' password='true' bindinput='newPwdInput'/>
+    <input class='inputItem' placeholder='确认密码' type='text' password='true' bindinput='cfmPwdInput'/>
+  </view>
+  <button class='inputButton' bindtap='adjust'>确认修改</button>
+</view>

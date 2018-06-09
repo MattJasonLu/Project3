@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view>
+  <view>欢迎登录</view>
+  <view>
+    <input class='inputItem' placeholder='账号/手机/邮箱' type='text' bindinput='usernameInput'/>
+    <input class='inputItem' placeholder='密码' type='text' password='true' bindinput='passwordInput'/>
+  </view>
+  <view class='switchItems'>
+    记住密码<switch class='switchItem' checked bindchange="rememberPwd"/>
+    自动登录<switch class='switchItem' bindchange="autoLogin"/>
+    管理员账户<switch bindchange='isAdmin'/>
+  </view>
+  <button class='inputButton' bindtap='login'>登录</button>
+  <view class='jumpItems'>
+    <text class='jumpItem' bindtap='register'>注册账号</text>
+    <text class='jumpItem' bindtap='forgetPwd'>忘记密码</text>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/serve/serve.wxml-->
+<view>
+  <view class='button-group'>
+    <button bindtap='calendar'>教学日历</button>
+    <button bindtap='chase'>寻物启事</button>
+    <button bindtap='repair'>物品报修</button>
+  </view>
+  <view class='title'>
+    <view>近期考试</view>
+  </view>
+  <scroll-view class='news-body' scroll-y='true'>
+    <navigator url='' wx:for='{{exam}}'>
+      <view class='item'>
+        <view class='title'>{{item.time}}</view>
+        <view class='sub-title'>{{item.content}}</view>
+        <image class='poster' src='{{item.image}}'></image>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

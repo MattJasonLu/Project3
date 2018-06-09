@@ -1,0 +1,8 @@
+<!--pages/search/score/delete/index.wxml-->
+<view>
+  <view>
+    <input class='inputItem' placeholder='学生编号' type='text' bindinput='studentId'/>
+    <input class='inputItem' placeholder='课程编号' type='text' bindinput='courseId'/>
+  </view>
+  <button class='inputButton' bindtap='delete'>确认提交</button>
+</view>

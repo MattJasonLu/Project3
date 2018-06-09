@@ -1,0 +1,7 @@
+<!--pages/card/lost/index.wxml-->
+<view>
+  <view class='bar'>
+    <text class='title'>卡挂失</text>
+  </view>
+  <button class='add' bindtap='loss'>学生卡挂失</button>
+</view>

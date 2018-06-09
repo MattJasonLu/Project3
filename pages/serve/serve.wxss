@@ -1,0 +1,4 @@
+/* pages/serve/serve.wxss */
+.button-group{
+  display: flex;
+}

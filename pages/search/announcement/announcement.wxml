@@ -1,0 +1,22 @@
+<!--pages/search/announcement/announcement.wxml-->
+<view>
+  <view class='bar'>
+    <text class='title'>教务公告</text>
+    <button class='editBut' bindtap='editBut'>{{text}}</button>
+  </view>
+  <view>
+    <picker range='{{range}}' value='{{index}}' bindchange='categoryChange'>类别 {{range[index]}}</picker>
+  </view>
+  <view class='bar'>
+    <input type='text' class='searchText' bindinput='searchText' value='{{keyword}}'></input>
+    <button bindtap='search' class='searchBtn'>查询</button>
+  </view>
+  <view wx:for='{{announce}}' class='content'>
+    <image src='/image/delete.png' class='editImg' hidden='{{isShow}}' bindtouchend='deleteAnnounce' data-text='{{item.id}}'/>
+    <view class='item'>公告：{{item.content}}</view>
+    <view class='time'>发布时间：{{item.time}}</view>
+    <view class='time'>最后修改人：{{item.adjuster}}</view>
+  </view>
+
+  <button class='add' hidden='{{isShow}}' bindtap='add'>增加公告</button>
+</view>

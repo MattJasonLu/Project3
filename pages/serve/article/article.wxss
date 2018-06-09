@@ -1,0 +1,46 @@
+/* pages/serve/article/article.wxss */
+.bar {
+  display: flex;
+}
+.content{
+  margin: 30px;
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+}
+.editBut {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 80px;
+  height: 40px;
+}
+.title{
+  font-size: 2rem;
+  margin: 30px;
+}
+.editImg {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+}
+.item {
+  font-size: smaller;
+  width: 200px;
+  height: 30px;
+}
+.add {
+  margin: 20px;
+}
+.left {
+  margin-left: 20px;
+}
+.right {
+  margin-right: 20px;
+}
+.inputItem {
+  margin: 20px;
+  border: solid 1px black;
+}
+
+.inputButton {
+  margin: 20px
+}

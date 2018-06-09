@@ -1,0 +1,43 @@
+/* pages/register/register.wxss */
+.loginSolgon {
+  font-size: xx-large;
+  margin: 20px;
+}
+
+.tip {
+  color: grey;
+  margin: 20px;
+  font-size: smaller;
+}
+
+.tip2 {
+  color: grey;
+  margin-left: 20px;
+  font-size: x-small;
+}
+
+.inputItem {
+  margin: 20px;
+  border: solid 1px black;
+}
+
+.mobilePrefix {
+  margin-left: 20px;
+  width: 80px;
+  border: solid 1px black;
+}
+
+.mobile {
+  margin-left: 20px;
+  width: 230px;
+  border: solid 1px black;
+}
+
+.mobileItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.registerBut {
+  margin: 20px;
+}

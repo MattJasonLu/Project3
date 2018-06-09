@@ -1,0 +1,9 @@
+<!--pages/search/course/update/index.wxml-->
+<view>
+  <view>
+    <input class='inputItem' placeholder='课程名' type='text' bindinput='name'/>
+    <input class='inputItem' placeholder='教师' type='text' bindinput='teacher'/>
+    <input class='inputItem' placeholder='时间' type='text' bindinput='time'/>
+  </view>
+  <button class='inputButton' bindtap='update'>确认提交</button>
+</view>

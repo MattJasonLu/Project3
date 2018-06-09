@@ -1,0 +1,21 @@
+<!--pages/serve/article/article.wxml-->
+<view>
+  <view class='bar'>
+    <text class='title'>寻物启事</text>
+    <button class='editBut' bindtap='editBut'>{{text}}</button>
+  </view>
+  <view>
+    <input class='inputItem' placeholder='关键字' type='text' bindinput='keyword'/>
+    <button class='inputButton' bindtap='search'>查询</button>
+  </view>
+    <view wx:for='{{issue}}' class='content'>
+    <view class='left'>
+      <image src='/image/delete.png' class='editImg' hidden='{{isShow}}' bindtap='delete' data-text='{{item.id}}'/>
+    </view>
+    <view class='right'>
+      <view class='item'>{{item.content}}</view>
+      <view class='item'>{{item.time}}</view>
+    </view>
+  </view>
+  <button class='add' hidden='{{isShow}}' bindtap='add'>增加启事</button>
+</view>

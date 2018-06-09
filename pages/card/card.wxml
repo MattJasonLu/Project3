@@ -1,0 +1,17 @@
+<!--pages/card/card.wxml-->
+<view class='container'>
+  <view>
+    <button bindtap='info'>卡信息</button>
+    <button bindtap='turnover'>流水信息</button>
+    <button bindtap='lost'>卡挂失</button>
+  </view>
+  <view>
+    <text>\n滨江服务\n</text>
+    <button bindtap='pay'>饭卡充值</button>
+    <button bindtap='pay'>话费充值</button>
+    <button bindtap='pay'>Q币充值</button>
+    <button bindtap='pay'>交通充值</button>
+    <button bindtap='pay'>余额不足</button>
+    <button bindtap='pay'>为我充值</button>
+  </view>
+</view>

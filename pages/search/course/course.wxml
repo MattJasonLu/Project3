@@ -1,0 +1,23 @@
+<!--pages/search/course/course.wxml-->
+<view class='bar'>
+    <view class='title'>个人课表</view>
+    <button class='editBut' bindtap='editBut'>{{text}}</button>
+</view>
+
+<button class='add' hidden='{{isShow}}' bindtap='add'>增加课程</button>
+<button class='add' hidden='{{isShow}}' bindtap='update'>修改课程</button>
+<button class='add' hidden='{{isShow}}' bindtap='delete'>删除课程</button>
+<button class='add' hidden='{{isShow}}' bindtap='select'>查询课程</button>
+<view wx:for='{{times}}' class='course' wx:for-index='i' wx:for-item='time' hidden='{{!isShow}}'>
+  <view wx:for='{{dates}}' wx:for-index='j' wx:for-item='date'>
+    <view wx:if='{{i==0}}' class='course-item'>{{date}}</view>
+    <view wx:if='{{j==0}}' class='course-item'>{{time}}</view>
+    <view wx:else>
+      <view wx:for='{{course}}' wx:for-index='k' wx:for-item='subject'>
+        <view wx:if='{{subject[2]==date && subject[3]==time}}' class='course-item-subject'>{{subject[0]}}-{{subject[1]}}</view>
+        <!-- 此处bug无法解决 wx:for没有break，无法跳出，产生重复显示 -->
+        <view wx:if='{{subject==-1}}' class='course-item'></view>
+      </view>
+    </view>
+  </view>
+</view>

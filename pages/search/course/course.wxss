@@ -1,0 +1,55 @@
+/* pages/search/course/course.wxss */
+.course{
+  display: flex;
+  margin: 30rpx;
+}
+.course .course-item{
+  
+  width: 80rpx;
+  height: 100rpx;
+  border: 1rpx solid #eee;
+}
+
+.course .course-item-subject{
+  font-size:50%;
+  width: 80rpx;
+  height: 100rpx;
+  border: 1rpx solid #eee;
+}
+.bar {
+  display: flex;
+}
+.content{
+  margin: 70rpx;
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+}
+.editBut {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 80px;
+  height: 40px;
+}
+.title{
+  font-size: 2rem;
+  margin: 30rpx;
+}
+.editImg {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+}
+.item {
+  font-size: smaller;
+  width: 200px;
+  height: 30px;
+}
+.time {
+  margin-top: 10px;
+  font-size: x-small;
+  width: 40px;
+  height: 30px;
+}
+.add {
+  margin: 20px;
+}

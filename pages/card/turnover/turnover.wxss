@@ -1,0 +1,17 @@
+/* pages/card/turnover/turnover.wxss */
+.content{
+  margin: 50rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.title{
+  font-size: 2rem;
+  margin: 30rpx;
+}
+.inputItem {
+  margin: 20px;
+  border: solid 1px black;
+}
+
+.inputButton {
+  margin: 20px
+}

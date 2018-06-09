@@ -1,0 +1,13 @@
+<!--pages/card/turnover/turnover.wxml-->
+<view>
+  <view class='title'>流水信息</view>
+  <view>
+    <input class='inputItem' placeholder='关键字' type='text' bindinput='keyword'/>
+    <button class='inputButton' bindtap='search'>查询</button>
+  </view>
+  <view wx:for='{{turnover}}' class='content'>
+    <view class='time'>{{item.time}}</view>
+    <view class='name'>{{item.name}}</view>
+    <view class='pay'>消费额：{{item.consumption}}</view>
+  </view>
+</view>

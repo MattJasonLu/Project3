@@ -1,0 +1,68 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/register/register",
+    "pages/search/search",
+    "pages/search/announcement/announcement",
+    "pages/search/announcement/add/index",
+    "pages/search/notice/notice",
+    "pages/search/notice/add/index",
+    "pages/search/course/course",
+    "pages/search/course/add/index",
+    "pages/search/course/update/index",
+    "pages/search/course/delete/index",
+    "pages/search/score/score",
+    "pages/search/score/add/index",
+    "pages/search/score/update/index",
+    "pages/search/score/delete/index",
+    "pages/serve/serve",
+    "pages/serve/calendar/calendar",
+    "pages/serve/calendar/index/index",
+    "pages/serve/article/article",
+    "pages/serve/article/add/index",
+    "pages/serve/fix/fix",
+    "pages/serve/fix/add/index",
+    "pages/card/card",
+    "pages/card/info/info",
+    "pages/card/balance/balance",
+    "pages/card/turnover/turnover",
+    "pages/card/pay/pay",
+    "pages/card/lost/index",
+    "pages/logs/logs",
+    "pages/adjustPwd/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#09bb07",
+    "navigationBarTitleText": "滨江学院微门户",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#dddddd",
+    "selectedColor":"#3cc51f",
+    "borderStyle":"black",
+    "backgroundColor":"#ffffff",
+    "list":[{
+      "pagePath":"pages/search/search",
+      "iconPath":"image/Search_off.png",
+      "selectedIconPath":"image/Search_on.png",
+      "text":"微查询"
+    }, {
+      "pagePath":"pages/serve/serve",
+      "iconPath":"image/Serve_off.png",
+      "selectedIconPath":"image/Serve_on.png",
+      "text":"微服务"
+    }, {
+      "pagePath": "pages/card/card",
+      "iconPath": "image/Card_off.png",
+      "selectedIconPath": "image/Card_on.png",
+      "text": "一卡通"
+    }, {
+      "pagePath": "pages/index/index",
+      "iconPath": "image/User_off.png",
+      "selectedIconPath": "image/User_on.png",
+      "text": "我的"
+    }]
+  }
+}

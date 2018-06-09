@@ -1,0 +1,13 @@
+/* pages/card/card.wxss */
+.container{
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 10px;
+}
+.container button{
+  float: left;
+  margin: 10rpx;
+  width: 210rpx;
+  height: 150rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/search/score/update/index.wxml-->
+<view>
+  <view>
+    <input class='inputItem' placeholder='学生编号' type='text' bindinput='studentId'/>
+    <input class='inputItem' placeholder='课程编号' type='text' bindinput='courseId'/>
+    <input class='inputItem' placeholder='成绩' type='text' bindinput='score'/>
+  </view>
+  <button class='inputButton' bindtap='update'>确认提交</button>
+</view>

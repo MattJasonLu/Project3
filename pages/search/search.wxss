@@ -1,0 +1,22 @@
+/* pages/search/search.wxss */
+.container{
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 10px;
+}
+.container input{
+  float: right;
+  border: 1px solid;
+}
+.button-group {
+  display: flex;
+  flex-direction: row;
+}
+.button-group button{
+  font-size: 110%;
+  line-height: 80rpx;
+  margin: 7rpx;
+  width: 165rpx;
+  height: 165rpx;
+}
